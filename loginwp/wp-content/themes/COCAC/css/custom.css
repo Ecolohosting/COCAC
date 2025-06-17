@@ -206,6 +206,7 @@ header .et_pb_menu__logo { max-width: 125px; }
 .sec_marc_asc .et_pb_row { display: grid; grid-template-columns: repeat(2, 47%); column-gap: 6.5%; row-gap: 50px; }
 }
 @media (max-width:600px) {
+    /*** Ajustes para el formulario en pantallas pequeñas **/
 #page-container .formulario > li { width: 100%; margin: 0; }
 }
 @media (max-width:480px) {
