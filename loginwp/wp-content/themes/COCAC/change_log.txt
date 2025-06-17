@@ -1,0 +1,58 @@
+4.1 de 21 de Octubre de 2024
+
+11 22 2024
+css/custom.css
+- Implementacion de CSS acerca de OWL Carousel
+
+10 21 2024
+functions.php
+- Organización de funciones
+- Se cambio la CDN para Fontawesome
+- Se comentaron archivos custom que pueden o no ser usados en el proyecto
+- Se cambio la forma de implementacion del logo al inicio de sesión por medio del logotipo de Divi
+- Se elimino la seccion de Facebook al ser llamada por medio de las opciones del plugin de seccion
+- Se actualizaron los detalles de seguridad
+- Se subieron el numero de revisiones de pagina y entradas a 10
+- Se agrego la funcion que limita el numero de intentos de inicio de sesion fallidos al usuario
+/wp-content/uploads/.htaccess
+- Actualizacion de HTACCESS de "uploads" para la lectura de los archivos "mp4, webm, webp"
+/wp-content/plugins/
+- Se limpio el repertorio de plugins borrando los poco usados y se agregaron otros plugins de funcionalidades especificas
+wp-config.php
+- Se implemento "error" para orillar al creador de instalador que debe de poner un prefijo a la tabla de WP
+- Se desactivo el WP-CRON por motivos de seguridad
+
+3.0
+12 19 2023
+functions.php
+- Se eliminó el script de Fit Text
+- Se cambio la forma de hacer llamar el kit de Fontawesome a su CDN indicado
+- Se eliminó el include que manda a llamar el recaptcha
+- Se eliminó la función de esconder notificacion de actualizaciones de AIOM
+- Se eliminó la función de registro de menu para medios sociales
+- Se eliminó la función de shortcode para URL
+- Se eliminó la función de codigo para Facebook
+- Se eliminó la función de registro de menu para su implementacion de doble idioma 
+- Se eliminó la función de registro de shortcode para redes sociales
+styles.css
+- Se eliminaron los estilos referentes al cambio de idioma
+- Se eliminaron los estilos referentes al menu de redes sociales 
+- Se actualizaron estilos referentes al OWL Carrusel
+- Se eliminaron los estilos del scroll de los mapas
+/js/custom.js
+- Se eliminó la función de Fitt Text
+- Se eliminó la función de mapa de google
+- Se eliminó la función de menu de redes sociales
+/images/
+- Se eliminó la imagen de banderas
+/js/
+- Se eliminó el JS de Fit Text
+/font/
+- Se eliminaron las fonts de FontAwesome al ser llamados por su CDN
+/css/
+- Se eliminaron los css relacionados a FontAwesome
+
+
+
+2.0.1 - 04 25 2023
+99	- Se agregó CSS relacionado al desplegado de Aviso de Privacidad

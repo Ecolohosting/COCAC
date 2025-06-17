@@ -1,0 +1,651 @@
+/* OWL CAROUSEL */
+.dp-dfg-container { display: flex; }
+.dp-dfg-items { width: 100%; }
+.owl-carousel .et_pb_gallery_item { width:100%!important;margin:0!important; }
+.owl-stage { display:flex; }
+.owl-stage-outer { overflow: hidden; max-width: 100%; }
+.owl-nav button span { display: none; }
+.flex-control-nav { position: relative; }
+.owl-nav button:before { font-family:FontAwesome;font-size:67px;color:#878787; }
+.owl-nav .owl-prev:before { content:"\f104"; }
+.owl-nav .owl-next:before { content:"\f105"; }
+.owl-nav button { position:absolute;top:50%;transform:translateY(-50%);background-color:transparent;border:none; }
+.et_pb_gallery_pagination { display: none; }
+.owl-nav .owl-next { right: 0; }
+html body {
+font-size: 1rem;font-weight: 500;
+}
+:root {
+    --primary-color: #0a2d61;
+    --secondary-color: #ce5786;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --link-color: #0a2d61;
+    --link-hover-color: #ce5786;
+}
+.et_pb_promo {
+    display: grid;
+    row-gap: 1.44em;
+}
+#top_menu .et-menu > .menu-item {
+    padding: 0;
+}
+
+#top_menu .et-menu > .menu-item > a {
+    line-height: 1 !important;
+    padding: 1em 1.3em !important;
+    background-color: rgb(255 0 0 / 0%);
+}
+.has_et_pb_sticky .et_pb_section {
+    background-color: #f4f4f4;
+}
+.et_pb_sticky--top{transition: .5s ease !important;}
+#top_menu .et-menu > .menu-item.current-menu-item  > a {background-color: #ffd9e4;}
+#top_menu .et_pb_menu__logo-wrap{transition: max-width 0.3s ease-in-out;}
+#social-floating .icon:hover:before {
+    color: #FF7DB3 !important;
+}
+.has_et_pb_sticky #top_menu .et_pb_menu__logo-wrap {
+    max-width: 155px;
+}
+ .et_pb_section--with-menu.et_pb_sticky {
+    box-shadow: 2px 2px 14px rgb(0 0 0 / 0%);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.has_et_pb_sticky .et_pb_section--with-menu.et_pb_sticky {
+    box-shadow: 2px 2px 14px rgb(0 0 0 / 19%);
+}
+.main_header_st .et_pb_slider_container_inner .et_pb_slide_image {
+    width: 100%;position: relative;
+    margin: 0 !important;
+}.main_header_st .et_pb_container .et_pb_slide_description {
+    display: none;
+}
+.main_header_st .et_pb_container {
+    height: auto !important;
+}
+.main_header_st .et_pb_slider_container_inner .et_pb_slide_image img {
+    max-width: 100% !important;
+    max-height: unset !important;
+}
+.et_pb_promo_description {
+    padding-bottom: 0;
+}
+.list_menu_bg ul li:nth-child(2) {
+    background-color: rgb(42 112 222);
+}
+#et-main-area .asoc_blrb_el .et_pb_image_wrap img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: fill;
+    opacity: 1 !important;animation: none !important;
+}
+.list_menu_bg ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+}
+.list_menu_bg ul a{color: inherit;line-height: 1;display: block;padding-top: 1em;padding-bottom: 1em;}
+
+.ev_card_sty .dp-dfg-item {
+    --pad-le-ri: 4%;
+    /* --pad-ri: 4%; */
+    padding-left: var(--pad-le-ri);
+    padding-right: var(--pad-le-ri);
+    font-size: 1rem;
+    margin-bottom: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* grid-template-columns: 1fr auto; */
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ev_card_sty .dp-dfg-item .dp-dfg-cf-fecha_ {
+    order: -1;
+    width: 100%;
+}
+
+.ev_card_sty .dp-dfg-item .read-more-wrapper {
+    /* order: 0; */
+    /* grid-row: 1/3; */
+    position: absolute;
+    right: var(--pad-le-ri);
+}
+
+.ev_card_sty .dp-dfg-item .read-more-wrapper .et_pb_button {
+    font-size: 1em;
+}
+
+.ev_card_sty .dp-dfg-item .entry-title {
+    font-size: 1em !important;
+    font-weight: normal;
+}
+
+
+.ev_card_sty .dp-dfg-item .dp-dfg-custom-field .dp-dfg-custom-field-value {
+    font-size: 1em !important;
+}
+
+.ev_card_sty .dp-dfg-item .dp-dfg-header {
+    padding: 0;
+}
+
+.ev_card_sty .dp-dfg-item .dp-dfg-custom-field {
+    padding: 0;
+}
+
+.ev_card_sty .dp-dfg-item .dp-dfg-header .entry-title:after {
+    content: "/";
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+
+.ev_card_sty .dp-dfg-item:not(:last-child):after {
+    content: "";
+    border-bottom: solid 1px #ada5a5;
+    width: calc(100% - calc(var(--pad-le-ri) * 2));
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ev_card_sty .dp-dfg-item .dp-dfg-cf-fecha_ {
+    text-transform: capitalize;
+}
+.no-li {
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.bg_50 {
+    background-size: 0;
+}
+
+.bg_50:before {
+    content: "";
+    position: absolute;
+    /* width: 100%; */
+    height: 100%;
+    background-image: inherit;
+    top: 0;
+    width: 50%;    background-size: cover;
+}
+
+.bg_50.ri_pos:before {
+    right: 0;
+}
+
+.asoc_blrb_el .et_pb_blurb_content,.asoc_blrb_el .et_pb_blurb_content .et_pb_blurb_container,
+.asoc_blrb_el   {
+    display: contents;
+}
+.asoc_blrb_el   .et_pb_image_wrap {
+    aspect-ratio: 1;
+    overflow: hidden;
+    width: 100% !important;
+    border-radius: 100%;
+    max-width: 155px;
+    box-shadow: 0 0 16px rgb(0 0 0 / 44%);
+}
+
+.asoc_blrb_el .et_pb_image_wrap img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: fill;
+}
+
+.asoc_blrb_el .et_pb_main_blurb_image {
+    width: 100%;
+}
+
+
+.sec_marc_asc  .et_pb_row {
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    column-gap: 2.5%;
+}
+
+.sec_marc_asc .et_pb_row > .et_pb_column {
+    width: 100%;
+    margin: 0;
+}
+
+.sec_marc_asc .et_pb_row:after {
+    content: none;
+}
+
+
+.sec_marc_asc .et_pb_row > .et_pb_column {
+    display: inline-grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: auto 1fr auto;
+    grid-row: span 3;
+    grid-row: repeat(4, minmax(100px, auto));
+    row-gap: 15px;
+    height: 100%;
+}
+
+.cta_donar {
+    display: grid;
+    grid-template-columns: 385px 1fr;
+    align-content: center;
+    align-items: center;
+    column-gap: 21%;
+    row-gap: 26px;
+}
+
+#page-container .et_pb_promo ul {
+    line-height: 1.7em;
+    display: grid;
+    row-gap: .56em;
+}
+.et_pb_blurb_description p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}.asoc_blrb_el .et_pb_blurb_content .et_pb_blurb_container a {
+    color: inherit;
+}
+
+footer .foo-menu {
+    display: flex
+;
+    list-style: none;
+    column-gap: 2.4em;
+    flex-wrap: wrap;
+    row-gap: 12px;
+}
+footer .foo-menu a{color: inherit; transition: .5s ease;}
+footer .foo-menu a:hover{color: white;}
+.et_pb_text_align_right .foo-menu {
+    justify-content: end;
+}
+
+:root {
+  --sf-size: 40px;              /* Tamaño base del ícono */
+  --sf-gap: 12px;               /* Espaciado entre íconos */
+  --sf-bg: #0a2a66;             /* Color de fondo del contenedor */
+  --sf-hover-bg: #183b8c;       /* Color al hacer hover */
+  --sf-radius: 6px;             /* Bordes redondeados */
+  --sf-font-size: 1.2rem;       /* Tamaño del ícono */
+}
+
+#social-floating {
+  position: fixed;
+  top: 35%;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--sf-bg);
+  padding: calc(var(--sf-gap) / 2) 5px;
+  border-radius: var(--sf-radius) 0 0 var(--sf-radius);
+  display: grid;
+}
+
+#social-floating a {
+  display: block;
+  /* margin: var(--sf-gap) 0; */
+  text-align: center;
+  color: white;
+  font-size: var(--sf-font-size);
+  width: var(--sf-size);
+  height: var(--sf-size);
+  line-height: var(--sf-size);
+  background-color: var(--sf-bg) !important;
+  border-radius: var(--sf-radius);
+  transition: background 0.3s ease;
+  margin: 0 !important;
+}
+
+
+#social-floating a:hover {
+  background-color: var(--sf-hover-bg);
+}
+
+#social-floating i {
+  pointer-events: none;
+}
+
+.map_sty iframe {
+    width: 100%;
+    aspect-ratio: 4.5;
+    height: 100%;
+}
+
+
+
+
+
+/**formulario css**/
+.formulario .recaptcha {
+    float: left
+}
+
+.formulario ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%
+}
+
+.form_st .et_pb_text_inner {
+    color: #7d7a7a
+}
+
+.formulario li {
+    padding: 0;
+    display: inline-block;
+    vertical-align: top
+}
+
+.formulario li.fullwidth {
+    width: 100% !important;
+    margin-right: 0
+}
+
+.formulario li.list_fix {
+    display: none !important
+}
+
+/* Ajuste de estilos para los inputs */
+.formulario input[type=text], 
+.formulario input[type=email], 
+.formulario input[type=tel], 
+.formulario select {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 18px;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 1.1em;
+    color: #222;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.formulario input[type=text]:focus, 
+.formulario input[type=email]:focus, 
+.formulario input[type=tel]:focus, 
+.formulario select:focus {
+    border-color: #2a70de;
+    outline: none;
+    box-shadow: 0 0 0 2px #2a70de22;
+}
+
+.formulario input[type=text], 
+.formulario input[type=email], 
+.formulario input[type=tel], 
+.formulario select, 
+.formulario textarea {
+    border-radius: 8px;
+    text-transform: none;
+    font-size: inherit
+}
+
+.formulario li textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: #222;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.formulario li textarea:focus {
+    border-color: #2a70de;
+    outline: none;
+    box-shadow: 0 0 0 2px #2a70de22;
+}
+
+.formulario li textarea, .formulario li input[type=text]:focus, .formulario li input[type=email]:focus {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease
+}
+
+.formulario li input[type=submit], .gform_wrapper input[type=submit] {
+    height: auto;
+    font-weight: 600;
+    line-height: 1;
+    border: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    cursor: pointer;    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 1em;
+    padding: .9em 3.9em;
+    border-radius: 0;
+    margin-top: 1em
+}
+
+#main-content .formulario input[type=text], 
+#main-content .formulario input[type=email], 
+#main-content .formulario input[type=tel], 
+#main-content .formulario select, 
+#main-content .formulario textarea {
+    font-style: normal;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#main-content .formulario input[type=text]:focus, 
+#main-content .formulario input[type=email]:focus, 
+#main-content .formulario input[type=tel]:focus, 
+#main-content .formulario select:focus, 
+#main-content .formulario textarea:focus {
+    border: solid 1px #484d55;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formulario li input[type=submit]:hover {
+    background-color: #232323
+}
+
+.formulario li input[type=submit]:hover {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease
+}
+
+form:not(.submitting) .wpcf7-spinner {
+    display: none !important
+}
+
+.my_form_s .et_pb_module_header {
+    padding-bottom: 1em
+}
+
+.my_form_s .formulario {
+    margin-top: 1.3em
+}
+
+.formulario .wpcf7-list-item label {
+    font-size: .6em;
+    margin-bottom: 2em;
+    display: block
+}
+
+.formulario .wpcf7-list-item input[type=checkbox] {
+    display: none
+}
+
+.formulario .wpcf7-list-item label .wpcf7-list-item-label {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: .9em;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    line-height: 1.4em
+}
+
+.formulario .wpcf7-list-item label .wpcf7-list-item-label:before {
+    content: "\f00c";
+    text-align: center;
+    border: solid 2px #ce5786;
+    font-family: FontAwesome;
+    line-height: 1;
+    font-size: .8em;
+    line-height: 1.3em;
+    height: 1.3em;
+    width: 1.3em;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff0;
+    transition: .5s ease
+}
+
+.formulario .wpcf7-list-item input[type=checkbox]:checked + .wpcf7-list-item-label:before {
+    color: #ce5786
+}
+
+.formulario p {
+    padding-bottom: 0
+}
+
+.formulario.main_wrap > li {
+    width: 100%
+}
+
+#page-container .formulario {
+    display: flex !important;
+    flex-wrap: wrap;
+    grid-row-gap: 20px;
+    padding: 0
+}
+
+#page-container .formulario li input[type=submit] {
+    text-transform: none;
+    border-radius: 2px;
+  /*  float: right;*/
+    border: solid var(--primary-color) 1px;
+    background-color: var(--primary-color);
+    color: #fff
+}
+
+#page-container .formulario li input[type=submit]:hover {
+    color: var(--primary-color);
+    border-color: currentColor;
+    background-color: #fff0
+}
+
+.formulario li {
+    margin-bottom: 0 !important
+}
+
+.formulario.dos_campos li {
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: .8em
+}
+
+.formulario.dos_campos li:nth-child(2n) {
+    margin-right: 0 !important
+}
+
+.formulario.positivo li textarea, .formulario.positivo li input[type=text], .formulario.positivo li input[type=email], .formulario.positivo li input[type=tel] {
+    color: #d3cece;
+    background-color: #fff0;
+    border-width: 2px;
+    border-bottom: solid #d3cece !important
+}
+
+.formulario.positivo li textarea:focus, .formulario.positivo li input[type=text]:focus, .formulario.positivo li input[type=email]:focus, .formulario.positivo li input[type=tel]:focus {
+    background: #f9faff;
+    color: #0a2d61;
+    border: solid rgb(0 0 0 / .1) !important
+}
+
+.al-right {
+    text-align: right
+}
+
+.formulario input::placeholder, .formulario textarea::placeholder {
+    color: #bdbdbd !important;
+    opacity: 1;
+}
+
+.formulario.negativo input[type=text], .formulario.negativo [type=email], .formulario.negativo input[type=tel], .formulario.negativo textarea, .formulario.negativo select {
+    color: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    border: solid 1px;
+    border-radius: 8px;
+    border-width: 1px !important
+}
+.formulario li:has(.cf7-label) {
+    text-align: left;
+}
+.formulario li .cf7-label {
+    padding-left: 15px;
+    padding-bottom: .3em !important;
+    display: block;
+}
+.formulario  br {
+    display: none;
+}
+.payment-icons {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.payment-icons img {
+  height: 30px;
+  border-radius: 6px;
+  background: white;
+  padding: 4px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+@media (max-width: 980px) {
+.et_pb_section:nth-child(1) .et_pb_fullwidth_header {
+    padding: 0;
+}
+.bg_50:before {
+    visibility: hidden;
+}
+.et_pb_text_align_left-tablet .foo-menu {
+    justify-content: flex-start;
+    padding: 0;
+}
+}  
+
+
+@media (max-width: 767px) {
+.cta_donar{
+    grid-template-columns: 100%;
+}
+}
+
+
+
+@media (max-width: 600px) {
+#page-container .formulario > li {
+    width: 100%;margin: 0;
+}
+}

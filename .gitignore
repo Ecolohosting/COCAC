@@ -1,0 +1,66 @@
+# WordPress core files
+/wp-admin/
+/wp-includes/
+license.txt
+readme.html
+wp-config-sample.php
+
+# Sensitive files
+wp-config.php
+.htaccess
+web.config
+
+# Log files and databases
+*.log
+*.sql
+*.sqlite
+*.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# IDE and editor folders/files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Node, Composer, and build files
+node_modules/
+npm-debug.log
+yarn-error.log
+vendor/
+composer.lock
+package-lock.json
+
+# Uploads and cache
+wp-content/uploads/
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+
+# Ignore plugins and themes except your own
+wp-content/plugins/*
+!wp-content/plugins/mi-plugin
+wp-content/themes/*
+!wp-content/themes/mi-tema
+!wp-content/themes/mi-tema-hijo
+
+# Ignore mu-plugins except your own
+wp-content/mu-plugins/*
+!wp-content/mu-plugins/custom-post-types-plugin.php
+
+# Ignore translations
+*.mo
+*.po
+
+# Backup and export files
+*.bak
+*.tmp
+*.swp
+*.zip
+*.tar.gz

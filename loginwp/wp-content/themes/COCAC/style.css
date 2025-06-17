@@ -1,0 +1,13 @@
+/*
+ Theme Name:     COCAC
+ Theme URI:      http://www.elegantthemes.com/demo/?theme=Divi
+ Description:    This is Child Theme for COCAC
+ Author:         Ecolohosting
+ Author URI:     http://ecolohosting.com/
+ Template:       Divi
+ Version:        4.0
+*/
+ 
+/* Add Custom CSS in css/custom.css */
+
+@import url("../css/custom.css");
