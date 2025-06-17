@@ -199,7 +199,7 @@ header .et_pb_menu__logo { max-width: 125px; }
 .et_pb_text_align_left-tablet .foo-menu { justify-content: flex-start; padding: 0; }
 }
 @media (max-width:767px) {
-p{opacity: 1;}
+
 .cta_donar { grid-template-columns: 100%; }
 .ev_card_sty .dp-dfg-item .read-more-wrapper { position: static; order: 1; }
 .ev_card_sty .dp-dfg-item { flex-direction: column; text-align: center; display: grid; justify-content: center; }
