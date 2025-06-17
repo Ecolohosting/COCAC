@@ -68,7 +68,7 @@ function cocac_gallery_metabox_html( $post ) {
                 foreach ( $ids as $id ) {
                     $src = wp_get_attachment_image_src( $id, 'thumbnail' );
                     if ( $src ) {
-                        echo '<li data-id="' . esc_attr( $id ) . '"><img src="' . esc_url( $src[0] ) . '" /></li>';
+                        echo '<li data-id="' . esc_attr( $id ) . '"><img src="' . esc_url( $src[0] ) . '" /><button type="button" class="cocac-remove-image">&times;</button></li>';
                     }
                 }
             }
@@ -100,7 +100,7 @@ function cocac_gallery_admin_assets( $hook ) {
         return;
     }
     wp_enqueue_media();
-    wp_enqueue_script( 'cocac-gallery-admin', plugin_dir_url( __FILE__ ) . 'assets/js/admin.js', array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'cocac-gallery-admin', plugin_dir_url( __FILE__ ) . 'assets/js/admin.js', array( 'jquery', 'jquery-ui-sortable' ), '1.1', true );
     wp_enqueue_style( 'cocac-gallery-admin', plugin_dir_url( __FILE__ ) . 'assets/css/admin.css' );
 }
 add_action( 'admin_enqueue_scripts', 'cocac_gallery_admin_assets' );
