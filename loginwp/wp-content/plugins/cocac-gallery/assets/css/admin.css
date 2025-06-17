@@ -1,11 +1,25 @@
 .cocac-gallery-preview {
     margin-top: 10px;
+    padding: 0;
 }
 .cocac-gallery-preview li {
+    position: relative;
     display: inline-block;
     margin-right: 5px;
+    cursor: move;
 }
 .cocac-gallery-preview img {
     max-width: 80px;
     height: auto;
+    display: block;
+}
+.cocac-remove-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
 }
