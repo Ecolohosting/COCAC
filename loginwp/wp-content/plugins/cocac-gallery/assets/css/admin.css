@@ -1,0 +1,11 @@
+.cocac-gallery-preview {
+    margin-top: 10px;
+}
+.cocac-gallery-preview li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.cocac-gallery-preview img {
+    max-width: 80px;
+    height: auto;
+}
