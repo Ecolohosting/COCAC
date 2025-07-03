@@ -25,7 +25,7 @@ function customcss(){
     // wp_enqueue_style('owlcarousel-css', get_stylesheet_directory_uri() . '/css/owl.carousel.min.css'); 
 
     /* CDN FONT AWESOME */
-    // wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css', array(), '6.0.0-beta3');
+    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css', array(), '6.0.0-beta3');
    
 }
 add_action('wp_enqueue_scripts','customcss');
@@ -249,4 +249,41 @@ function acf_field_shortcode($atts) {
 }
 add_shortcode('acf', 'acf_field_shortcode');
 
-// ...existing code...
+// Shortcode para mostrar tabs de galería y cargar CSS/JS personalizados
+function gallery_tabs_shortcode($atts, $content = null) {
+    // Enqueue CSS y JS solo cuando se usa el shortcode
+    wp_enqueue_style('gallery-tabs-css', get_stylesheet_directory_uri() . '/css/estilos-tab-gallery.css', array(), '1.0.0');
+    wp_enqueue_style('magnific-popup-css', get_stylesheet_directory_uri() . '/css/magnific-popup.css', array(), '1.0.0');
+    wp_enqueue_script('gallery-tabs-js', get_stylesheet_directory_uri() . '/js/gallery-tab.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('magnific-popup-js', get_stylesheet_directory_uri() . '/js/jquery.magnific-popup.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('imagesloaded-js', 'https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js', array('jquery'), null, true);
+    wp_enqueue_script('masonry-js', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', array('jquery'), null, true);
+
+    // Estructura HTML básica para los tabs
+    ob_start();
+    ?>
+    <div id="tabs-container">
+      <ul id="tabs-nav"></ul>
+      <div id="tabs-content"></div>
+    </div>
+    <?php
+    return ob_get_clean();
+}
+add_shortcode('gallery_tabs', 'gallery_tabs_shortcode');
+
+/* Google Analytic */
+add_action('wp_head','my_analytics', 20);
+function my_analytics() {
+?>
+<!-- Google tag (gtag.js) | cocacbc.com -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-42BPFHETDR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-42BPFHETDR');
+</script>
+
+<?php
+}

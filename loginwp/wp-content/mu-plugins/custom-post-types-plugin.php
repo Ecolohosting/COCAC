@@ -31,8 +31,10 @@ function cocac_register_custom_post_types() {
         'public' => true,
         'has_archive' => true,
         'supports' => array( 'title', 'editor', 'thumbnail' ),
-        'rewrite' => array( 'slug' => 'evento' ),
-        'menu_icon' => 'dashicons-calendar-alt', // Icono de calendario para eventos
+        'rewrite' => array( 'slug' => 'evento', 'with_front' => true ), // Cambiado slug a 'evento'
+        'publicly_queryable' => true,
+        'menu_icon' => 'dashicons-calendar-alt',
+        'show_in_rest' => true,
     );
     register_post_type( 'eventos', $args );
 
@@ -53,9 +55,11 @@ function cocac_register_custom_post_types() {
         ),
         'public' => true,
         'has_archive' => true,
-        'supports' => array( 'title', 'thumbnail' ),
-        'rewrite' => array( 'slug' => 'galeria' ),
-        'menu_icon' => 'dashicons-format-gallery', // Icono de galería
+        'supports' => array( 'title' ), // Removido 'thumbnail'
+        'rewrite' => false, // Esto desactiva las URLs SEO
+        'publicly_queryable' => false, // Esto oculta el enlace permanente en el admin
+        'menu_icon' => 'dashicons-format-gallery',
+        'show_in_rest' => true, // Hacer visible en la REST API
     );
     register_post_type( 'galeria', $galeria_args );
 

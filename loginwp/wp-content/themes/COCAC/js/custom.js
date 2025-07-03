@@ -4,4 +4,12 @@ jQuery(function ($) {
 
     /* OPEN SOCIAL IN NEW TAB */
         $(".et-social-icon a").attr('target', '_blank');
+
+
+document.querySelectorAll('a').forEach(function(button) {
+  if (button.textContent.trim().toLowerCase() === 'donar') {
+    button.setAttribute('target', '_blank');
+  }
+});
+
 });
